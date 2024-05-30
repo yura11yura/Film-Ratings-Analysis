@@ -1,0 +1,158 @@
+1) Fandango DataFrame correlation
+           STARS    RATING     VOTES
+STARS   1.000000  0.994696  0.164218
+RATING  0.994696  1.000000  0.163764
+VOTES   0.164218  0.163764  1.000000
+------------------------------------------------------------
+2) Get year from date-time row 'FILM'
+0    2015
+1    2015
+2    2015
+3    2015
+4    2015
+5    2014
+6    2015
+7    2015
+8    2015
+9    2014
+------------------------------------------------------------
+3) Fandango film count grouped by release year
+YEAR
+2015    478
+2014     23
+2016      1
+1964      1
+2012      1
+------------------------------------------------------------
+4) Fandango films sorted by umber of votes
+                                               FILM  STARS  RATING  VOTES  YEAR
+0                       Fifty Shades of Grey (2015)    4.0     3.9  34846  2015
+1                             Jurassic World (2015)    4.5     4.5  34390  2015
+2                            American Sniper (2015)    5.0     4.8  34085  2015
+3                                  Furious 7 (2015)    5.0     4.8  33538  2015
+4                                 Inside Out (2015)    4.5     4.5  15749  2015
+5  The Hobbit: The Battle of the Five Armies (2014)    4.5     4.3  15337  2014
+6               Kingsman: The Secret Service (2015)    4.5     4.2  15205  2015
+7                                    Minions (2015)    4.0     4.0  14998  2015
+8                    Avengers: Age of Ultron (2015)    5.0     4.5  14846  2015
+9                             Into the Woods (2014)    3.5     3.4  13055  2014
+------------------------------------------------------------
+5) Fandango number of films without votes
+69
+------------------------------------------------------------
+6) Fandango films with more than 0 votes
+                                               FILM  STARS  RATING  VOTES  YEAR
+0                       Fifty Shades of Grey (2015)    4.0     3.9  34846  2015
+1                             Jurassic World (2015)    4.5     4.5  34390  2015
+2                            American Sniper (2015)    5.0     4.8  34085  2015
+3                                  Furious 7 (2015)    5.0     4.8  33538  2015
+4                                 Inside Out (2015)    4.5     4.5  15749  2015
+5  The Hobbit: The Battle of the Five Armies (2014)    4.5     4.3  15337  2014
+6               Kingsman: The Secret Service (2015)    4.5     4.2  15205  2015
+7                                    Minions (2015)    4.0     4.0  14998  2015
+8                    Avengers: Age of Ultron (2015)    5.0     4.5  14846  2015
+9                             Into the Woods (2014)    3.5     3.4  13055  2014
+------------------------------------------------------------
+7) Fandango difference between stars and rating
+                                               FILM  STARS  RATING  VOTES  YEAR  STARS_DIFF
+0                       Fifty Shades of Grey (2015)    4.0     3.9  34846  2015         0.1
+1                             Jurassic World (2015)    4.5     4.5  34390  2015         0.0
+2                            American Sniper (2015)    5.0     4.8  34085  2015         0.2
+3                                  Furious 7 (2015)    5.0     4.8  33538  2015         0.2
+4                                 Inside Out (2015)    4.5     4.5  15749  2015         0.0
+5  The Hobbit: The Battle of the Five Armies (2014)    4.5     4.3  15337  2014         0.2
+6               Kingsman: The Secret Service (2015)    4.5     4.2  15205  2015         0.3
+7                                    Minions (2015)    4.0     4.0  14998  2015         0.0
+8                    Avengers: Age of Ultron (2015)    5.0     4.5  14846  2015         0.5
+9                             Into the Woods (2014)    3.5     3.4  13055  2014         0.1
+------------------------------------------------------------
+8) Fandango film with 1 star difference between user ratings and stars displayed
+                 FILM  STARS  RATING  VOTES  YEAR  STARS_DIFF
+381  Turbo Kid (2015)    5.0     4.0      2  2015         1.0
+------------------------------------------------------------
+9) RottenTomatoes difference between user ratings and RT rating
+                             FILM  RottenTomatoes  RottenTomatoes_User  Metacritic  Metacritic_User  IMDB  Metacritic_user_vote_count  IMDB_user_vote_count  Rotten_diff
+0  Avengers: Age of Ultron (2015)              74                   86          66              7.1   7.8                        1330                271107          -12
+1               Cinderella (2015)              85                   80          67              7.5   7.1                         249                 65709            5
+2                  Ant-Man (2015)              80                   90          64              8.1   7.8                         627                103660          -10
+3          Do You Believe? (2015)              18                   84          22              4.7   5.4                          31                  3136          -66
+4   Hot Tub Time Machine 2 (2015)              14                   28          29              3.4   5.1                          88                 19560          -14
+5        The Water Diviner (2015)              63                   62          50              6.8   7.2                          34                 39373            1
+6           Irrational Man (2015)              42                   53          53              7.6   6.9                          17                  2680          -11
+7                 Top Five (2014)              86                   64          81              6.8   6.5                         124                 16876           22
+8    Shaun the Sheep Movie (2015)              99                   82          81              8.8   7.4                          62                 12227           17
+9             Love & Mercy (2015)              89                   87          80              8.5   7.8                          54                  5367            2
+------------------------------------------------------------
+10) RottenTomatoes mean difference
+15.0959
+------------------------------------------------------------
+11) RottenTomatoes 5 films ranked highest by users compared to critics
+                          FILM  Rotten_diff
+3       Do You Believe? (2015)          -66
+85           Little Boy (2015)          -61
+134    The Longest Ride (2015)          -42
+105    Hitman: Agent 47 (2015)          -42
+125  The Wedding Ringer (2015)          -39
+------------------------------------------------------------
+12) RottenTomatoes 5 films ranked highest by critics compared to users
+                                   FILM  Rotten_diff
+69                    Mr. Turner (2014)           42
+112                   It Follows (2015)           31
+115            While We're Young (2015)           31
+145  Kumiko, The Treasure Hunter (2015)           24
+37                 Welcome to Me (2015)           24
+------------------------------------------------------------
+13) IMDB film with highest number of votes
+FILM                          The Imitation Game (2014)
+RottenTomatoes                                       90
+RottenTomatoes_User                                  92
+Metacritic                                           73
+Metacritic_User                                     8.2
+IMDB                                                8.1
+Metacritic_user_vote_count                          566
+IMDB_user_vote_count                             334164
+Rotten_diff                                          -2
+------------------------------------------------------------
+14) MetaCritic film with highest number of votes
+                         FILM  RottenTomatoes  RottenTomatoes_User  Metacritic  Metacritic_User  IMDB  Metacritic_user_vote_count  IMDB_user_vote_count  Rotten_diff
+88  Mad Max: Fury Road (2015)              97                   88          89              8.7   8.3                        2375                292023            9
+------------------------------------------------------------
+15) Fandango with all_sites
+                                               FILM  STARS  RATING  VOTES  YEAR  STARS_DIFF  RottenTomatoes  RottenTomatoes_User  Metacritic  Metacritic_User  IMDB  Metacritic_user_vote_count  IMDB_user_vote_count  Rotten_diff
+0                       Fifty Shades of Grey (2015)    4.0     3.9  34846  2015         0.1              25                   42          46              3.2   4.2                         778                179506          -17
+1                             Jurassic World (2015)    4.5     4.5  34390  2015         0.0              71                   81          59              7.0   7.3                        1281                241807          -10
+2                            American Sniper (2015)    5.0     4.8  34085  2015         0.2              72                   85          72              6.6   7.4                         850                251856          -13
+3                                  Furious 7 (2015)    5.0     4.8  33538  2015         0.2              81                   84          67              6.8   7.4                         764                207211           -3
+4                                 Inside Out (2015)    4.5     4.5  15749  2015         0.0              98                   90          94              8.9   8.6                         807                 96252            8
+5  The Hobbit: The Battle of the Five Armies (2014)    4.5     4.3  15337  2014         0.2              61                   75          59              7.0   7.5                         903                289464          -14
+6               Kingsman: The Secret Service (2015)    4.5     4.2  15205  2015         0.3              75                   84          58              7.9   7.8                        1054                272204           -9
+7                                    Minions (2015)    4.0     4.0  14998  2015         0.0              54                   52          56              5.7   6.7                         204                 55895            2
+8                    Avengers: Age of Ultron (2015)    5.0     4.5  14846  2015         0.5              74                   86          66              7.1   7.8                        1330                271107          -12
+9                             Into the Woods (2014)    3.5     3.4  13055  2014         0.1              71                   50          69              6.1   6.0                         307                 81679           21
+------------------------------------------------------------
+16) Normalize all ratings to range 0-5
+   STARS  RATING  RT_Norm  Meta_Norm  Meta_U_Norm  IMDB_Norm
+0    4.0     3.9      1.2        2.3          1.6        2.1
+1    4.5     4.5      3.6        2.9          3.5        3.6
+2    5.0     4.8      3.6        3.6          3.3        3.7
+3    5.0     4.8      4.1        3.4          3.4        3.7
+4    4.5     4.5      4.9        4.7          4.4        4.3
+5    4.5     4.3      3.0        2.9          3.5        3.8
+6    4.5     4.2      3.8        2.9          4.0        3.9
+7    4.0     4.0      2.7        2.8          2.9        3.4
+8    5.0     4.5      3.7        3.3          3.6        3.9
+9    3.5     3.4      3.6        3.4          3.0        3.0
+------------------------------------------------------------
+16) RottenTomatoes 10 films with lowest rating
+                             FILM  STARS  RATING  RT_Norm  RTU_Norm  Meta_Norm  Meta_U_Norm  IMDB_Norm
+49  Paul Blart: Mall Cop 2 (2015)    3.5     3.5      0.2       1.8        0.6          1.2        2.2
+25                 Taken 3 (2015)    4.5     4.1      0.4       2.3        1.3          2.3        3.0
+28          Fantastic Four (2015)    3.0     2.7      0.4       1.0        1.4          1.2        2.0
+54             Hot Pursuit (2015)    4.0     3.7      0.4       1.8        1.6          1.8        2.4
+84        Hitman: Agent 47 (2015)    4.0     3.9      0.4       2.4        1.4          1.6        3.0
+50       The Boy Next Door (2015)    4.0     3.6      0.5       1.8        1.5          2.8        2.3
+77             Seventh Son (2015)    3.5     3.2      0.6       1.8        1.5          2.0        2.8
+78               Mortdecai (2015)    3.5     3.2      0.6       1.5        1.4          1.6        2.8
+83              Sinister 2 (2015)    3.5     3.3      0.6       1.7        1.6          2.5        2.8
+87     Unfinished Business (2015)    3.5     3.2      0.6       1.4        1.6          1.9        2.7
+------------------------------------------------------------
